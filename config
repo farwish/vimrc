@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+
+[alias]
+    st = status
+    co = checkout
+    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold         blue)<%an>%Creset' --abbrev-commit
+    br = branch 
+[core]
+    editor = vim
