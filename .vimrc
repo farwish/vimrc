@@ -25,12 +25,11 @@ set smartindent
 
 " 自动缩进4空格
 set shiftwidth=4
-" 换行时使用4个空格
-set shiftwidth=4
+
 " 设置Tab键宽度
 set tabstop=4
 
-" 默认窗口大小
+" 默认窗口大小（与tmux面板编辑时冲突）
 set lines=40 columns=110
 
 " 自动换行
