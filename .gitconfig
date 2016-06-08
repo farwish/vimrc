@@ -8,4 +8,10 @@
     st = status
     co = checkout
     lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold         blue)<%an>%Creset' --abbrev-commit
-    br = branch 
+    lgm = log --pretty=format:'%h %s' --graph
+    br = branch
+    bra = branch -a
+    brm = branch -m
+    brd = branch -D
+    fp = fetch -p
+    fo = fetch origin
