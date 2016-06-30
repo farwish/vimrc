@@ -56,8 +56,10 @@ set incsearch
 set backspace=2
 
 " 关闭声音
-set noeb
 set vb
 
 " 粘贴格式
 set paste
+
+" 保持标志折叠
+set fdm=marker
