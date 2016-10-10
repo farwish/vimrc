@@ -104,10 +104,18 @@ set autoindent
 
 " 自动缩进4空格
 set shiftwidth=4
+
 " 换行时使用4个空格
 set shiftwidth=4
+
 " 设置Tab键宽度
 set tabstop=4
+
+" Tab变空格
+set expandtab
+
+" 退格键退回缩进的长度
+set softtabstop=4
 
 " 默认窗口大小
 " 40 * 110
