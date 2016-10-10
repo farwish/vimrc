@@ -20,7 +20,7 @@ Plugin 'VundleVim/Vundle.vim' " 插件管理, 必需
 "Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree' 		" 目录树
 Plugin 'flazz/vim-colorschemes' 	" :colorscheme molokai
-Plugin 'ervandew/supertab' 			" 当前文件tab补全
+"Plugin 'ervandew/supertab' 			" 当前文件tab补全
 Plugin 'scrooloose/syntastic' 		" 语法错误提示
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -61,17 +61,17 @@ filetype plugin indent on    " required
 map <C-V> :NERDTreeToggle<CR>
 
 " superTab.
-let g:SuperTabDefaultCompletionType="context"
+"let g:SuperTabDefaultCompletionType="context"
 
 " syntastic 错误语法提示.
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 
 "################################## 常规configure #################################
