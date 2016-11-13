@@ -149,7 +149,7 @@ set backspace=2
 set vb
 
 " 保存marker格式
-set fdm=marker
+" set fdm=marker
 
 " 粘贴格式
 " set paste
