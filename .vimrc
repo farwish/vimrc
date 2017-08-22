@@ -17,15 +17,29 @@ Plugin 'VundleVim/Vundle.vim' " 插件管理, 必需
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+
 " plugin on GitHub repo
+
 "Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree' 		" 目录树
-Plugin 'flazz/vim-colorschemes' 	" :colorscheme molokai
-"Plugin 'ervandew/supertab' 			" 当前文件tab补全
-Plugin 'scrooloose/syntastic' 		" 语法错误提示
+
+Plugin 'scrooloose/nerdtree'        " 目录树
+" 映射ctrl+v 到:NERDTreeToggle+回车
+map <C-V> :NERDTreeToggle<CR>
+
+Plugin 'scrooloose/syntastic'       " 语法错误提示>>
+
+Plugin 'flazz/vim-colorschemes'     " :colorscheme molokai
+
+Plugin 'ervandew/supertab'          " 文件内容tab补全
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
+
+Plugin 'ctrlp.vim'                  " 模糊查找文件，ctrl+p 打开搜索窗, esc 退出
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
 
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -58,22 +72,13 @@ filetype plugin indent on    " required
 
 "##################################/ Vundle.vim ###################################
 
-" 映射ctrl+v 到:NERDTreeToggle+回车.
-map <C-V> :NERDTreeToggle<CR>
-
-" superTab.
-"let g:SuperTabDefaultCompletionType="context"
-
-" syntastic 错误语法提示.
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-
+" the_silver_searcher: 用ag替代grep
+" git clone https://github.com/ggreer/the_silver_searcher
+" yum -y groupinstall 'Development Tools'
+" yum -y install pcre-devel xz-devel
+" ./build.sh
+" sudo make install
+let g:ackprg = 'ag --vimgrep'
 
 "################################## 常规configure #################################
 
