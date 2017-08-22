@@ -1,5 +1,12 @@
 # vimrc
 
+## Remote Install
+
+```
+$ curl -sS https://raw.githubusercontent.com/farwish/delicateShell/master/support/fwVimrcInstall.sh | sh
+```
+
+## Details
 
 Files:
 
@@ -8,13 +15,19 @@ Files:
 .gitconfig   
 ```
 
-Use .vimrc:
+Command install .vimrc:
 
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`  
-`git clone https://github.com/farwish/vimrc.git ~/vimrc && cp ~/vimrc/.vimrc ~/`  
-`vim`  
-`:PluginInstall`  
+```
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$ git clone https://github.com/farwish/vimrc.git ~/vimrc && cp ~/vimrc/.vimrc ~/  
+$ vim
+$ :PluginInstall  
+```
 
-Use .gitconfig:  
+Command install .gitconfig:  
 
-`cp ~/vimrc/.gitconfig ~/`  
+```
+cp ~/vimrc/.gitconfig ~/
+```
+
+
