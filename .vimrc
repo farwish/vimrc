@@ -37,9 +37,14 @@ let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 
-Plugin 'ctrlp.vim'                  " 模糊查找文件，ctrl+p 打开搜索窗, esc 退出
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
+Plugin 'ctrlp.vim'                      " 模糊查找文件，ctrl+p 打开搜索窗, esc 退出
+" 终端文档 :help ctrlp-options
+" 项目地址 http://ctrlpvim.github.io/ctrlp.vim/
+" <c-t> 内部新tab打开 / <c-x> 水平打开 / <c-v> 垂直打开 / <c-j/k> 上下选择文件
+" <c-f> / <c-b> 在 files,mru,buffers 模式之间切换
+let g:ctrlp_by_filename = 1             " 设置默认匹配文件名, 是否包含路径用 <c-d> 开关
+let g:ctrlp_regexp = 1                  " 设置搜索模式regexp为默认的, 可以在提示符里按 <c-r> 开关
+let g:ctrlp_match_window_reversed = 0   " 改变匹配的文件列表顺序从上到下, 默认1为从下到上
 
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
