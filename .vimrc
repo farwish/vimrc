@@ -163,3 +163,9 @@ set vb
 
 " 粘贴格式
 " set paste
+
+" licnese annotation alias
+:ab lmit @license MIT
+:ab lbsd @license BSD-3
+:ab lapache @license Apache-2.0
+:ab mauthor @author farwish <farwish@foxmail.com>
