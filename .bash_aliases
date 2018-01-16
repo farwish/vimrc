@@ -7,7 +7,7 @@
 #    . ~/.bash_aliases
 #fi
 
-alias psg="ps auxf | grep"
+alias psg="ps auxf | grep -v grep | grep"
 alias dk="docker"
 
 alias gst="git status"
