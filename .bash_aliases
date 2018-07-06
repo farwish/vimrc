@@ -10,16 +10,39 @@
 alias psg="ps auxf | grep -v grep | grep"
 alias dk="docker"
 
-alias gst="git status"
+#################### GIT shortcut, follow zsh plugin git #####################
+#################### https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
+
+alias gfa="git fetch origin --all -p"
+
+alias gl="git pull"
+
 alias gco="git checkout"
-alias gcob="git checkout -b"
+alias gcb="git checkout -b"
+
 alias gb="git branch"
 alias gba="git branch -a"
-alias gbm="git branch -m"
-alias gbd="git branch -D"
-alias gfp="git fetch -p"
-alias gfop="git fetch origin -p"
-alias glg="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias glgm="git log --pretty=format:'%h %s' --graph"
-alias gdf="git diff"
-alias gpull="git pull"
+
+alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+
+alias gst="git status"
+
+alias gaa="git add -A"
+
+alias gc="git commit -v"
+alias gc!="git commit -v --amend"
+alias gcam="git commit -a -m"
+
+alias grb="git rebase"
+
+alias gm="git merge"
+
+alias gp="git push"
+
+alias gstl="git stash list"
+alias gsta="git stash save"
+alias gstp="git stash pop"
+alias gstc="git stash clear"
+
+alias gts="git tag -s"
