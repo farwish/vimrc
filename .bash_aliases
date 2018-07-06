@@ -28,6 +28,8 @@ alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 
 alias gst="git status"
 
+alias gd="git diff"
+
 alias gaa="git add -A"
 
 alias gc="git commit -v"
