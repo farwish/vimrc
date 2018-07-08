@@ -13,7 +13,7 @@ alias dk="docker"
 #################### GIT shortcut, follow zsh plugin git #####################
 #################### https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
 
-alias gfa="git fetch origin --all -p"
+alias gfa="git fetch origin -p"
 
 alias gl="git pull"
 
