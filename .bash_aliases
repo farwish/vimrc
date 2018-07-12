@@ -9,6 +9,7 @@
 
 alias psg="ps auxf | grep -v grep | grep"
 alias dk="docker"
+alias dkc="docker-compose"
 
 #################### GIT shortcut, follow zsh plugin git #####################
 #################### https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
