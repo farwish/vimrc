@@ -7,7 +7,7 @@
 #    . ~/.bash_aliases
 #fi
 
-alias psg="ps auxf | grep -v grep | grep"
+alias psg="ps auxf | grep -v grep | grep -v vi | grep "
 alias dk="docker"
 alias dkc="docker-compose"
 
