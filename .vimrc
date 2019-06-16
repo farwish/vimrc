@@ -102,7 +102,7 @@ set langmenu=zh_CN.UTF-8
 " set guifont=Courier\ New:h10
 
 " 语法高亮
-set syntax=on
+syntax on
 
 " C语言方式缩进
 set cindent
