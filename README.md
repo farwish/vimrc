@@ -1,5 +1,15 @@
 # vimrc
 
+
+## NOTE
+
+```
+# If you just want to install one file, do like this
+# As download .bash_aliases
+
+$ wget https://raw.githubusercontent.com/farwish/vimrc/master/.bash_aliases
+```
+
 ## Remote Install
 
 ```
