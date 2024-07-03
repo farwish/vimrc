@@ -61,8 +61,10 @@ alias grbc="git rebase --continue"
 alias grbs="git rebase --skip"
 
 alias grh="git reset"
+alias gru="git reset --"
 alias grhh="git reset --hard"
-alias grss="git reset --soft" # 自定义
+alias grhk="git reset --keep"
+alias grhs="git reset --soft"
 
 alias grm="git rm"
 alias grrm="git remote remove"
